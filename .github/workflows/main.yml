@@ -4,6 +4,8 @@ on:
     branches:
       - main
   pull_request:
+    branches:
+      - main
 jobs:
   update_course_content:
     name: Upload files to the course
@@ -13,12 +15,12 @@ jobs:
       - name: Upload to Course
         uses: Brightspace/update-course-action@master
         with:
-          valenceAppId: ${{ secrets.VALENCE_APPID }}
-          valenceAppKey: ${{ secrets.VALENCE_APPKEY }}
-          valenceUserId: ${{ secrets.VALENCE_USERID }}
-          valenceUserKey: ${{ secrets.VALENCE_USERKEY }}
-          instanceDomain: umanitobadev.desire2learn.com
-          courseOrgUnitId: 168445
+          valenceAppId: ${{ secrets.VALENCE_APPID_PROD }}
+          valenceAppKey: ${{ secrets.VALENCE_APPKEY_PROD }}
+          valenceUserId: ${{ secrets.VALENCE_USERID_PROD }}
+          valenceUserKey: ${{ secrets.VALENCE_USERKEY_PROD }}
+          instanceDomain: universityofmanitoba.desire2learn.com
+          courseOrgUnitId: 474692
           contentDirectory: content
           manifestPath: manifest.json
           dryRun: ${{ github.ref != 'refs/heads/main' }}

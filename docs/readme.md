@@ -1,12 +1,27 @@
 
-University of Manitoba CS Missing semester
-==========================================
+University of Manitoba CS Topics Primer
+=======================================
+
+Stuff that is CS... but not CS? Let's talk about the ecosystem *around*
+programming, and how to do CS **well**. In university, we talk about
+*programming* and we talk about *algorithms*, but we often don't talk about
+all the tooling that is available *around* programming these algorithms.
 
 Inspired by [MIT's missing semester](https://missing.csail.mit.edu/), a toolkit for
 students to train students in hard tech skills that will help them succeed.
 We've seen 3rd year students in Operating Systems, Real Time Systems, and other
 technical courses struggle to use the tools - stumbling with the tools rather than
 focusing on the assignment at hand.
+
+The welcome video:
+
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/Q2AEZqczbvY"
+title="YouTube video player"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
 
 Topics
 ------
@@ -57,7 +72,7 @@ Topics
 * [Building programs](7_building)
   * Makefiles
   * Library paths?
-* [Virtual machines](8_virtualiztion)
+* [Virtual machines](8_virtualization)
   * What are they?
   * Why should we use them?
 * [Source code control](9_versioning_code)
